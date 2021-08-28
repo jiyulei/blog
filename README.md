@@ -25,3 +25,5 @@ anytime we wanna use async actions, we need to use custom middleware
    1. must return an action objects       1. Action creator can return objects OR functions
    2. must have a 'type' property         2. must have a 'type' property 
    3. optional have a 'payload'           3. optional have a 'payload'
+
+6. Mutation in javascript:
