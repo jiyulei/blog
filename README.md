@@ -2,6 +2,8 @@
     Middleware to helps to make request in redux application
 
 2. 
+cant not write action creator as follow, because async function is not actually 
+returning an action object.
 <!-- import jsonPlaceholder from "../apis/jsonPlaceholder";
 
 export const fetchPosts = async () => {
@@ -26,4 +28,12 @@ anytime we wanna use async actions, we need to use custom middleware
    2. must have a 'type' property         2. must have a 'type' property 
    3. optional have a 'payload'           3. optional have a 'payload'
 
-6. Mutation in javascript:
+6. By using redux thunk, action creator dont need to always return an action object,
+   we can return a function. But must manually dispatch the action.
+
+7. _.memoize
+
+8. ownProps in mapStateToProps( state, ownProps), to handle some logic
+
+9. reducer takes state and action as argument. And using switch case syntax.
+   Also must return a new array or object to update the state then cause rerender.
